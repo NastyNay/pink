@@ -1,10 +1,141 @@
-$bgcolor: green;
+ .page-wrapper-center {
+     margin: 0 auto;
+     width: 100px;
+ }
 
-body {
-    background-color: $bgcolor;
+.page-header {
+    width: 340px;
+    height: 460px;
+    background-image: url(/images/iphone-5-inside-image.png),
+     url(/images/iphone-5-in-hand.png),
+     url(/images/back-mobile@1x.png);
+     background-repeat: no-repeat, no-repeat, no-repeat;
+     background-position: 49.7% 68%, bottom, bottom; 
+}
+    
+.page-header-wrapper {
+    padding: 20px;
+    background-color: rgba(0,0,0,.3);
+}
+ 
+
+.page-header-download-app {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    background-color: #1d2631;
 }
 
-div {
+.page-header-download-app__tagline {
+    display: none;
+}
+    
+.page-header-download-app__button {
+    background-color: transparent;
+    display: block;
+    font-family: "Open Sans Bold";
+    font-size: 21px;
+    line-height: 18px;
+    color: #ffffff;
+    border: 3px solid white;
+    border-radius: 25px;
+    padding: 14px 25px;
+    margin-bottom: 70px;
+}
+    
+.page-header-download-app__icons {
+    display: flex;
+    column-gap: 35px;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+    
+.page-header-download-app__platforms {
     font-family: "Open Sans Light";
-    font-size: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    opacity: 0.8;
 }
+    
+    
+
+
+@media (min-width: 1200px) {
+
+.page-header {
+    width: 1200px;
+    height: 850px;
+    margin: 0 auto;
+    background-image: url(/images/header-iphone-inside-image-desktop.png),
+    url(/images/header-iphone-in-hand-desktop.png),
+    url(/images/header-back-desktop.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 74.2% 60.8%, 100% bottom, bottom; 
+}
+
+.page-header-wrapper {
+    display: flex;
+    padding-left: 120px;
+    padding-right: 120px;
+    height: 110px;
+    background-color: rgba(0,0,0,.3);
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+.page-header-download-app {
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.page-header-download-app__tagline {
+    font-family: "Open Sans Light";
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.page-header-download-app__button {
+    background-color: transparent;
+    display: block;
+    font-family: "Open Sans Bold";
+    font-size: 21px;
+    line-height: 18px;
+    color: #ffffff;
+    border: 3px solid white;
+    border-radius: 25px;
+    padding: 14px 25px;
+    margin-bottom: 70px;
+}
+
+.page-header-download-app__icons {
+    display: flex;
+    column-gap: 35px;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.page-header-download-app__platforms {
+    font-family: "Open Sans Light";
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    min-width: 340px;
+
+    font-family: "Open Sans Regular";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
