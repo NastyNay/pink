@@ -1,0 +1,107 @@
+
+.about-app__wrapper {
+width: 100%;
+background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 150%);
+}
+
+.about-app {
+    width:1200px;
+    padding: 0 120px;
+    padding-top: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-app__tagline {
+    font-family: "Open Sans Light";
+    font-size: 50px;
+    color: #283645;
+    margin-bottom: 75px;
+}
+
+.about-app__functions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-app__function {
+    width: 280px;
+    position: relative;
+}
+
+.about-app__function {
+    position: relative;
+}
+
+.about-app__function-image {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.about-app__function-image_shadow {
+    position: absolute;
+    top: 293px;
+    left: 0px;
+}
+
+.about-app__function-tagline {
+    font-family: "Open Sans Bold";
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.about-app__function-description {
+    font-family: "Open Sans Regular";
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    margin-bottom: 160px;
+}
+
+.about-app__positive-effect {
+    text-align: left;
+    padding-left: 350px;
+    position: relative;
+    
+}
+
+.about-app__positive-effect::before {
+    content: " ";
+    position: absolute;
+    bottom: 80px;
+    left: 0px;
+    width: 300px;
+    height: 350px;
+    background-image: url(/images/clock-24-hours.png);
+    background-repeat: no-repeat;
+}
+
+.about-app__positive-effect-tagline {
+    display: inline-block;
+    font-family: "Open Sans Bold";
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.about-app__positive-effect-proofs {
+    font-family: "Open Sans Regular";
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    margin-bottom: 40px;
+}
+
+.about-app__positive-effect-link {
+    display: inline-block;
+    font-family: "Open Sans Regular";
+    font-size: 18px;
+    line-height: 30px;
+    color: #d22856;
+    text-decoration: underline;
+    margin-bottom: 120px;
+}
+

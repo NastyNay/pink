@@ -1,0 +1,66 @@
+.commentary-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    padding: 0 120px;
+    margin: 0 auto;
+    
+} 
+
+.commentary-section__commentary {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 190px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 960px;
+}   
+
+.commentary-section__commentary-arrows {
+   opacity: 0.3;
+   &:hover {
+       opacity: 0.6;
+   }
+   &:active {
+       opacity: 0.1;
+   }
+}
+
+.commentary-section__commentary::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 440px;
+    background-image:  url(/images/quotes-image.svg);
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 85px;
+}
+
+.commentary-section__commentary-text {
+    width: 700px;
+    font-family: "Open Sans Regular";
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+}
+
+.commentary-section__user {
+    font-family: "Open Sans Bold";
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.commentary-section__about-user {
+    font-family: "Open Sans Regular";
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+}
+

@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pink</title>
     <link rel="stylesheet" href="dist/css/style.min.css">
-    <link href="/dist/fonts/OpenSans-Regular.woff2">
 </head>
 
 <body>
@@ -29,7 +28,7 @@
                     Взгляните<br> на жизнь иначе!
                 </span>
                 <button class="page-header-download-app__button">
-                    Скачать приложение
+                    <span class="page-header-download-app__button_click">Скачать приложение</span>
                 </button>
                 <div class="page-header-download-app__icons">
                     <img src="images/apple-logo.svg" width="45" height="45">
@@ -43,22 +42,158 @@
             
         </header> 
     </div> 
-        <!-- <div class="page-header-download-app">
-            <span class="page-header-download-app__tagline">
-                Взгляните<br> на жизнь иначе!
-            </span>
-            <button class="page-header-download-app__button">
-                Скачать приложение
-            </button>
-            <div class="page-header-download-app__icons">
-                <img src="images/apple-logo.svg" width="45" height="45">
-                <img src="images/android-logo.svg" width="45" height="45">
-                <img src="images/microsoft-logo.svg" width="45" height="45">
+
+    <div class="about-app__wrapper">
+        <section class="about-app">
+            <h3 class="about-app__tagline">
+                Устали от серости мегаполиса?<br> Нам есть, что вам <br>предложить!
+            </h3>
+            <div class="about-app__functions">
+                <div class="about-app__function">
+                    <img class="about-app__function-image" src="images/Iphone-screen-with-trash.png" alt="Фотография мусорки">
+                    <img class="about-app__function-image_shadow" src="/images/Iphone-screen-shadow.png"> 
+                     <h4 class="about-app__function-tagline">
+                         Поднимает настроение
+                    </h4>
+                    <p class="about-app__function-description">
+                        Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                    </p>
+                </div>
+
+                <div class="about-app__function">
+                    <img class="about-app__function-image" src="images/Iphone-screen-with-pink-trash.png" alt="Розовая фотография мусорки">
+                    <img class="about-app__function-image_shadow" src="/images/Iphone-screen-shadow.png">
+                    <h4 class="about-app__function-tagline">
+                         Меняет мир вокруг
+                    </h4>
+                    <p class="about-app__function-description">
+                        Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                    </p>
+                </div>
+
+                <div class="about-app__function">
+                    <img class="about-app__function-image" src="images/Iphone-screen-with-pink-trash-smile.png" alt="Розовая фотография мусорки со смайликом">
+                    <img class="about-app__function-image_shadow" src="/images/Iphone-screen-shadow.png">
+                    <h4 class="about-app__function-tagline">
+                         Заводит новых друзей
+                    </h4>
+                    <p class="about-app__function-description">
+                        Ставьте лайки,<br> комментируйте, делитесь фотографиями с друзьями и заводите новых
+                    </p>
+                </div>
             </div>
-            <p class="page-header-download-app__platforms">
-                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+
+            <div class="about-app__positive-effect">
+                <span class="about-app__positive-effect-tagline">Эффект на 24 часа!</span>
+                <p class="about-app__positive-effect-proofs">Британские ученые провели исследования и доказали, 
+                    что положительный эффект от использования приложения длится целые сутки!
+                </p>
+                <a class="about-app__positive-effect-link" href="#">Узнать больше об исследовании</a>
+
+            </div>
+
+        </section>
+    </div>
+
+    <section class="commentary-section">
+        <div class="commentary-section__commentary">
+            <input class="commentary-section__commentary-arrows" type="image" src="/images/left-arrow.png">
+            <p class="commentary-section__commentary-text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я познакомился со своей будущей женой в
+                комментариях к выложенной фотографии!»
             </p>
-        </div> -->
+            <input class="commentary-section__commentary-arrows" type="image" src="/images/right-arrow.png">
+        </div>    
+            <span class="commentary-section__user">
+                Николай Петров
+            </span>
+            <span class="commentary-section__about-user">
+                25 лет, водитель трамвая
+            </span>
+        
+    </section>
+
+    <div class="price-chart__wrapper">
+        <section class="price-chart">
+            <table>
+                <tr>
+                    <td class="tariff">
+                        <span class="tariff_name">База</span>
+                        <span class="tariff_price">1,99 usd</span>  
+                    </td>
+                    <td class="tariff">
+                        <span class="tariff_hit">Хит</span>
+                        <span class="tariff_name">Стандарт</span>
+                        <span class="tariff_price">3,99 usd</span>
+                    </td>
+                    <td class="tariff">
+                        <span class="tariff_name">Анлим</span>
+                        <span class="tariff_price">9,99 usd</span>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="tariff-options">
+                    <tr>
+                        <td>Розовый фильтр</td>
+                        <td class="available-option"></td>
+                        <td class="available-option"></td>
+                        <td class="available-option"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Смайлики</td>
+                        <td class="non-available-option"></td>
+                        <td class="available-option"></td>
+                        <td class="available-option"></td>
+                    </tr>
+                    <tr>
+                        <td>Комментарии</td>
+                        <td class="non-available-option"></td>
+                        <td class="non-available-option"></td>
+                        <td class="available-option"></td>
+                    </tr>
+            </table>
+
+        </section>
+    </div>
+
+    <div class="contact-information">
+        <span class="contact-information__headline">
+            Остались вопросы? Свяжитесь с нами!
+        </span>
+        <div class="contact-information__options">
+            <span class="contact-information__options_call">Звоните:</span>
+            <span class="contact-information__mobile">+7(812)555-66-66</span>
+        </div>
+        <div class="contact-information__options">
+            <span class="contact-information__options_drive">Приезжайте в гости:</span>
+            <span class="contact-information__adress"> ул. Большая Конюшенная, 19/8</span>
+        </div>
+        <div class="contact-information__options">
+            <span class="contact-information__options_write">Пишите:</span>
+            <a href="#" class="contact-information__email">mail@htmlacademy.ru</a>
+        </div>
+
+    </div>
+
+    <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6230503076386!2d30.322119028657227!3d59.938396862386696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1639059733613!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <footer class="page-footer">
+        <a class="page-footer__footer-logo-link" href="#"><img class="page-footer__footer-logo" src="/images/footer-logo.svg" width="150" height="40"></img></a>
+        <div class="page-footer__socials">
+            <a class="page-footer__social-link page-footer__social-link_twitter" href="#"></a>
+            <a class="page-footer__social-link page-footer__social-link_facebook" href="#"></a>
+            <a class="page-footer__social-link page-footer__social-link_play" href="#"></a>
+        </div>
+        <div class="page-footer__htmlacademy">
+            <span>Разработано</span>
+            <a href="https://htmlacademy.ru/" target="_blank"><img class="page-footer__htmlacademy-logo" src="/images/htmlacademy.svg" width="30" height="35">
+        </div>
+    </footer>
         
 </body>
 </html>
