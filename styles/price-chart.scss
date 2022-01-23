@@ -77,13 +77,13 @@
 }
 
 .price-chart__available-option {
-    background-image: url(/dist/img/option-available.svg);
+    background-image: url(../img/option-available.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .price-chart__non-available-option {
-    background-image: url(/dist/img/option-non-available.svg);
+    background-image: url(../img/option-non-available.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -131,6 +131,9 @@
 
 }
 
-@media (max-width: 659px) {
+// @media (max-width: 659px) {
     
-}
+//     .price-chart__tariff {
+//         width: 96vw;
+//     }
+// }

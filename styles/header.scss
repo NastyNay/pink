@@ -11,7 +11,7 @@
     width: 1200px;
     padding: 0 120px;
     margin: 0 auto;
-    background-image: url(/dist/img/header-iphone-in-hand-desktop.png);
+    background-image: url(../img/header-iphone-in-hand-desktop.png);
     background-repeat: no-repeat;
     background-position: right  bottom; 
 }
@@ -103,14 +103,14 @@
 @media (max-width: 1199px) {
 
     .page-header__wrapper {
-        background-image: url(/dist/img/header-back-tablet.png);
+        background-image: url(../img/header-back-tablet.png);
     }
 
     .page-header {
         width: 620px;
         padding: 0 20px;
         margin: 0 auto;
-        background-image: url(/dist/img/header-iphone-in-hand-desktop.png);
+        background-image: url(../img/header-iphone-in-hand-desktop.png);
         background-repeat: no-repeat;
         background-position: bottom; 
         background-size: 140% auto;
@@ -147,7 +147,7 @@
 @media (max-width: 659px) {
 
     .page-header__wrapper {
-        background-image: url(/dist/img/header-back-mobile.png);
+        background-image: url(../img/header-back-mobile.png);
     }
 
     .page-header {
@@ -155,7 +155,7 @@
         height: 460px;
         padding: 0 20px;
         margin: 0 auto;
-        background-image: url(/dist/img/header-iphone-in-hand-desktop.png);
+        background-image: url(../img/header-iphone-in-hand-desktop.png);
         background-repeat: no-repeat;
         background-position: -140px bottom; 
         background-size: 160% auto;
