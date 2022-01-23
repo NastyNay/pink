@@ -30,13 +30,18 @@
     
 }
 
-.page-header__logo_image {
+.page-header__logo-image_desktop {
     &:hover {
         filter: brightness(0) saturate(100%) invert(26%) sepia(58%) saturate(3096%) hue-rotate(325deg) brightness(84%) contrast(95%);
     }
     &:active {
         opacity: 0.3;
     }
+}
+
+.page-header__logo-image_tablet,
+.page-header__logo-image_mobile {
+    display: none;
 }
 
 .download-app-mobile__wrapper {
@@ -123,6 +128,21 @@
         z-index: 2;
     }
 
+    .page-header__logo-image_tablet {
+        display: block;
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(26%) sepia(58%) saturate(3096%) hue-rotate(325deg) brightness(84%) contrast(95%);
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    .page-header__logo-image_desktop,
+    .page-header__logo-image_mobile {
+        display: none;
+    }
+
     .page-header-download-app_mobile-wrapper {
         display: none;
     }
@@ -148,6 +168,7 @@
 
     .page-header__wrapper {
         background-image: url(../img/header-back-mobile.png);
+        box-shadow: inset 0px 65px 0px 0px rgba(0,0,0,.3);
     }
 
     .page-header {
@@ -163,6 +184,21 @@
 
     .page-header__menu-wrapper {
         width: 100%;
+    }
+
+    .page-header__logo-image_mobile {
+        display: block;
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(26%) sepia(58%) saturate(3096%) hue-rotate(325deg) brightness(84%) contrast(95%);
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    .page-header__logo-image_desktop,
+    .page-header__logo-image_tablet {
+        display: none;
     }
 
     .page-header__download-app {

@@ -88,6 +88,10 @@
     background-position: center;
 }
 
+.price-chart__mobile {
+    display: none;
+}
+
 
 
 @media (max-width: 1199px) {
@@ -129,11 +133,41 @@
         font-size: 14px;
     }
 
+    .price-chart__mobile {
+        display: none;
+    }
+
 }
 
-// @media (max-width: 659px) {
-    
-//     .price-chart__tariff {
-//         width: 96vw;
-//     }
-// }
+@media (max-width: 659px) {
+
+    .price-chart__wrapper {
+        overflow: hidden;
+    }
+
+    .price-chart {
+        display: none;
+    }
+
+    .price-chart__mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+    }
+
+    .price-chart__tariff-options {
+        width: 96vw;
+    }
+
+    .price-chart__tariff-hit {
+        top: -12px;
+        right: 50px;
+        font-size: 12px;
+    }
+
+    .price-chart__mobile-cell {
+        text-align: center; 
+    }
+
+}
