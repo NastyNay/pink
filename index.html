@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <div class="header-wrapper">  
+    <div class="page-header__wrapper">  
         <header class="page-header">
-            <div class="menu-wrapper">
-                <a class="page-header-logo">
-                    <img class="page-header-logo__image" src="images/header-logo-desktop.svg" width="150" height="45">
+            <div class="page-header__menu-wrapper">
+                <a class="page-header__logo">
+                    <img class="page-header__logo_image" src="dist/img/header-logo-desktop.svg" width="150" height="45">
                 </a>
                 <nav class="main-nav">
                     <a class="main-nav__link" href="#">Главная</a>
@@ -21,21 +21,24 @@
                     <a class="main-nav__link" href="#">Конкурс</a>
                     <a class="main-nav__link" href="#">HTML Academy</a>
                 </nav>
+                <div class="main-nav__burger">
+                    <span></span>
+                </div>
             </div>  
             
-            <div class="page-header-download-app">
-                <span class="page-header-download-app__tagline">
+            <div class="page-header__download-app">
+                <span class="page-header__download-app-tagline">
                     Взгляните<br> на жизнь иначе!
                 </span>
-                <button class="page-header-download-app__button">
-                    <span class="page-header-download-app__button_click">Скачать приложение</span>
+                <button class="page-header__download-app-button">
+                    <span class="page-header__download-app-button_click">Скачать приложение</span>
                 </button>
-                <div class="page-header-download-app__icons">
-                    <img src="images/apple-logo.svg" width="45" height="45">
-                    <img src="images/android-logo.svg" width="45" height="45">
-                    <img src="images/microsoft-logo.svg" width="45" height="45">
+                <div class="page-header__download-app-icons">
+                    <img src="dist/img/apple-logo.svg" width="45" height="45">
+                    <img src="dist/img/android-logo.svg" width="45" height="45">
+                    <img src="dist/img/microsoft-logo.svg" width="45" height="45">
                 </div>
-                <p class="page-header-download-app__platforms">
+                <p class="page-header__download-app-platforms">
                     Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
                 </p>
             </div>
@@ -43,15 +46,31 @@
         </header> 
     </div> 
 
+    <div class="download-app-mobile__wrapper"> 
+        <div class="download-app_mobile">
+            <button class="page-header__download-app-button">
+                <span class="page-header__download-app-button_click">Скачать приложение</span>
+            </button>
+            <div class="page-header__download-app-icons">
+                <img src="dist/img/apple-logo.svg" width="45" height="45">
+                <img src="dist/img/android-logo.svg" width="45" height="45">
+                <img src="dist/img/microsoft-logo.svg" width="45" height="45">
+            </div>
+            <p class="page-header__download-app-platforms">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+        </div>
+    </div>
+
     <div class="about-app__wrapper">
         <section class="about-app">
             <h3 class="about-app__tagline">
-                Устали от серости мегаполиса?<br> Нам есть, что вам <br>предложить!
+                <span class="about-app__tagline-transfer">Устали от серости мегаполиса?</span><br> Нам есть, что вам <br>предложить!
             </h3>
             <div class="about-app__functions">
                 <div class="about-app__function">
-                    <img class="about-app__function-image" src="images/Iphone-screen-with-trash.png" alt="Фотография мусорки">
-                    <img class="about-app__function-image_shadow" src="/images/Iphone-screen-shadow.png"> 
+                    <img class="about-app__function-image" src="dist/img/Iphone-screen-with-trash.png" alt="Фотография мусорки">
+                    <img class="about-app__function-image-shadow" src="dist/img/Iphone-screen-shadow.png"> 
                      <h4 class="about-app__function-tagline">
                          Поднимает настроение
                     </h4>
@@ -61,8 +80,8 @@
                 </div>
 
                 <div class="about-app__function">
-                    <img class="about-app__function-image" src="images/Iphone-screen-with-pink-trash.png" alt="Розовая фотография мусорки">
-                    <img class="about-app__function-image_shadow" src="/images/Iphone-screen-shadow.png">
+                    <img class="about-app__function-image" src="dist/img/Iphone-screen-with-pink-trash.png" alt="Розовая фотография мусорки">
+                    <img class="about-app__function-image-shadow" src="dist/img/Iphone-screen-shadow.png">
                     <h4 class="about-app__function-tagline">
                          Меняет мир вокруг
                     </h4>
@@ -72,13 +91,13 @@
                 </div>
 
                 <div class="about-app__function">
-                    <img class="about-app__function-image" src="images/Iphone-screen-with-pink-trash-smile.png" alt="Розовая фотография мусорки со смайликом">
-                    <img class="about-app__function-image_shadow" src="/images/Iphone-screen-shadow.png">
+                    <img class="about-app__function-image" src="dist/img/Iphone-screen-with-pink-trash-smile.png" alt="Розовая фотография мусорки со смайликом">
+                    <img class="about-app__function-image-shadow" src="dist/img/Iphone-screen-shadow.png">
                     <h4 class="about-app__function-tagline">
                          Заводит новых друзей
                     </h4>
-                    <p class="about-app__function-description">
-                        Ставьте лайки,<br> комментируйте, делитесь фотографиями с друзьями и заводите новых
+                    <p class="about-app__function-description about-app__function-description-mobile">
+                        Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
                     </p>
                 </div>
             </div>
@@ -89,7 +108,6 @@
                     что положительный эффект от использования приложения длится целые сутки!
                 </p>
                 <a class="about-app__positive-effect-link" href="#">Узнать больше об исследовании</a>
-
             </div>
 
         </section>
@@ -111,48 +129,52 @@
             <span class="commentary-section__about-user">
                 25 лет, водитель трамвая
             </span>
-        
+            <p class="commentary-section__tablet-mobile-bullets">
+                <input class="commentary-section__tablet-mobile-bullet commentary-section__tablet-mobile-bullet_active" id="tablet-mobile-button1" type="radio" name="comment" value="">
+                <input class="commentary-section__tablet-mobile-bullet" id="tablet-mobile-button2" type="radio" name="comment" value="">
+                <input class="commentary-section__tablet-mobile-bullet" id="tablet-mobile-button3" type="radio" name="comment" value="">
+            </p>    
     </section>
 
     <div class="price-chart__wrapper">
         <section class="price-chart">
             <table>
                 <tr>
-                    <td class="tariff">
-                        <span class="tariff_name">База</span>
-                        <span class="tariff_price">1,99 usd</span>  
+                    <td class="price-chart__tariff">
+                        <span class="price-chart__tariff-name">База</span>
+                        <span class="price-chart__tariff-price">1,99 usd</span>  
                     </td>
-                    <td class="tariff">
-                        <span class="tariff_hit">Хит</span>
-                        <span class="tariff_name">Стандарт</span>
-                        <span class="tariff_price">3,99 usd</span>
+                    <td class="price-chart__tariff">
+                        <span class="price-chart__tariff-hit">Хит</span>
+                        <span class="price-chart__tariff-name">Стандарт</span>
+                        <span class="price-chart__tariff-price">3,99 usd</span>
                     </td>
-                    <td class="tariff">
-                        <span class="tariff_name">Анлим</span>
-                        <span class="tariff_price">9,99 usd</span>
+                    <td class="price-chart__tariff">
+                        <span class="price-chart__tariff-name">Анлим</span>
+                        <span class="price-chart__tariff-price">9,99 usd</span>
                     </td>
                 </tr>
             </table>
             
-            <table class="tariff-options">
+            <table class="price-chart__tariff-options">
                     <tr>
                         <td>Розовый фильтр</td>
-                        <td class="available-option"></td>
-                        <td class="available-option"></td>
-                        <td class="available-option"></td>
+                        <td class="price-chart__available-option"></td>
+                        <td class="price-chart__available-option"></td>
+                        <td class="price-chart__available-option"></td>
                     </tr>
 
                     <tr>
                         <td>Смайлики</td>
-                        <td class="non-available-option"></td>
-                        <td class="available-option"></td>
-                        <td class="available-option"></td>
+                        <td class="price-chart__non-available-option"></td>
+                        <td class="price-chart__available-option"></td>
+                        <td class="price-chart__available-option"></td>
                     </tr>
                     <tr>
                         <td>Комментарии</td>
-                        <td class="non-available-option"></td>
-                        <td class="non-available-option"></td>
-                        <td class="available-option"></td>
+                        <td class="price-chart__non-available-option"></td>
+                        <td class="price-chart__non-available-option"></td>
+                        <td class="price-chart__available-option"></td>
                     </tr>
             </table>
 
@@ -164,15 +186,15 @@
             Остались вопросы? Свяжитесь с нами!
         </span>
         <div class="contact-information__options">
-            <span class="contact-information__options_call">Звоните:</span>
+            <span class="contact-information__options-call">Звоните:</span>
             <span class="contact-information__mobile">+7(812)555-66-66</span>
         </div>
         <div class="contact-information__options">
-            <span class="contact-information__options_drive">Приезжайте в гости:</span>
+            <span class="contact-information__options-drive">Приезжайте в гости:</span>
             <span class="contact-information__adress"> ул. Большая Конюшенная, 19/8</span>
         </div>
         <div class="contact-information__options">
-            <span class="contact-information__options_write">Пишите:</span>
+            <span class="contact-information__options-write">Пишите:</span>
             <a href="#" class="contact-information__email">mail@htmlacademy.ru</a>
         </div>
 
@@ -183,7 +205,7 @@
     </div>
 
     <footer class="page-footer">
-        <a class="page-footer__footer-logo-link" href="#"><img class="page-footer__footer-logo" src="/images/footer-logo.svg" width="150" height="40"></img></a>
+        <a class="page-footer__footer-logo-link" href="#"><img class="page-footer__footer-logo" src="dist/img/footer-logo.svg" width="150" height="40"></img></a>
         <div class="page-footer__socials">
             <a class="page-footer__social-link page-footer__social-link_twitter" href="#"></a>
             <a class="page-footer__social-link page-footer__social-link_facebook" href="#"></a>
@@ -191,9 +213,9 @@
         </div>
         <div class="page-footer__htmlacademy">
             <span>Разработано</span>
-            <a href="https://htmlacademy.ru/" target="_blank"><img class="page-footer__htmlacademy-logo" src="/images/htmlacademy.svg" width="30" height="35">
+            <a href="#"><img class="page-footer__htmlacademy-logo" src="dist/img/htmlacademy.svg" width="30" height="35">       
         </div>
     </footer>
-        
+    <script src="/script.js"></script>
 </body>
 </html>

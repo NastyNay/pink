@@ -14,7 +14,7 @@
     align-items: flex-end;
 }
 
-.tariff {
+.price-chart__tariff {
     width: 233px;
     height: 100px;
     background-color: #283645;
@@ -23,28 +23,28 @@
     overflow: hidden;
 }
 
-.tariff_name {
+.price-chart__tariff-name {
     display: block;
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans Bold", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
 }
 
-.tariff_price {
-    font-family: "Open Sans Light";
+.price-chart__tariff-price {
+    font-family: "Open Sans Light", Helvetica, sans-serif;
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
     text-transform: uppercase;
 }
 
-.tariff_hit {
+.price-chart__tariff-hit {
     position: relative;
     top: -15px;
     right: 70px;
     display: block;
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans Bold", Helvetica, sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 30px;
@@ -56,34 +56,81 @@
     margin-bottom: -30px;
 }
 
-.tariff-options {
+.price-chart__tariff-options {
     width: 940px;
+    background-color: white;
     border: 2px solid #e5e5e5;
     border-collapse: collapse;
     height: auto;
 }
 
-.tariff-options td {
+.price-chart__tariff-options td {
     border: 2px solid #e5e5e5;
     border-collapse: collapse;
     width: 225px;
     height: 60px;
     padding-left: 25px;
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans Regular", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
 }
 
-.available-option {
-    background-image: url(/images/option-available.svg);
+.price-chart__available-option {
+    background-image: url(/dist/img/option-available.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.non-available-option {
-    background-image: url(/images/option-non-available.svg);
+.price-chart__non-available-option {
+    background-image: url(/dist/img/option-non-available.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
+
+
+@media (max-width: 1199px) {
+    
+    .price-chart {
+        width: 660px;
+        padding: 0 20px;
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+
+    .price-chart__tariff {
+        width: 152px;
+        height: 80px;
+    }
+
+    .price-chart__tariff-name {
+        font-size: 16px;
+    }
+    
+    .price-chart__tariff-price {
+        font-size: 18px;
+    }
+    
+    .price-chart__tariff-hit {
+        top: -15px;
+        right: 45px;
+        font-size: 16px;
+    }
+
+    .price-chart__tariff-options {
+        width: 620px;
+    }
+
+    .price-chart__tariff-options td {
+        width: 148px;
+        height: 60px;
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 659px) {
+    
+}

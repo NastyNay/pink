@@ -1,10 +1,12 @@
 .map-responsive {
+    position: relative;
     overflow: hidden;
     padding-bottom: 30%;
-    position: relative;
+    
     height: 0;
 }
 .map-responsive iframe {
+    position: absolute;
     left: 0;
     top: 0;
     height: 100%;

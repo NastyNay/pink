@@ -1,7 +1,6 @@
-
 .about-app__wrapper {
 width: 100%;
-background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 150%);
+background: linear-gradient(175.5deg, white 7% ,white 30% ,#f2f2f2 30% ,#f2f2f2 150%);
 }
 
 .about-app {
@@ -13,7 +12,7 @@ background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 
 }
 
 .about-app__tagline {
-    font-family: "Open Sans Light";
+    font-family: "Open Sans Light", Helvetica, sans-serif;
     font-size: 50px;
     color: #283645;
     margin-bottom: 75px;
@@ -29,23 +28,19 @@ background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 
     position: relative;
 }
 
-.about-app__function {
-    position: relative;
-}
-
 .about-app__function-image {
     margin-bottom: 55px;
     text-align: center;
 }
 
-.about-app__function-image_shadow {
+.about-app__function-image-shadow {
     position: absolute;
     top: 293px;
     left: 0px;
 }
 
 .about-app__function-tagline {
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans Bold", Helvetica, sans-serif;
     font-size: 30px;
     line-height: 30px;
     color: #000000;
@@ -53,7 +48,7 @@ background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 
 }
 
 .about-app__function-description {
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans Regular", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
@@ -63,8 +58,7 @@ background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 
 .about-app__positive-effect {
     text-align: left;
     padding-left: 350px;
-    position: relative;
-    
+    position: relative;  
 }
 
 .about-app__positive-effect::before {
@@ -74,13 +68,13 @@ background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 
     left: 0px;
     width: 300px;
     height: 350px;
-    background-image: url(/images/clock-24-hours.png);
+    background-image: url(/dist/img/clock-24-hours.png);
     background-repeat: no-repeat;
 }
 
 .about-app__positive-effect-tagline {
     display: inline-block;
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans Bold", Helvetica, sans-serif;
     font-size: 30px;
     line-height: 30px;
     color: #000000;
@@ -88,7 +82,7 @@ background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 
 }
 
 .about-app__positive-effect-proofs {
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans Regular", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
@@ -97,7 +91,7 @@ background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 
 
 .about-app__positive-effect-link {
     display: inline-block;
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans Regular", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #d22856;
@@ -105,3 +99,175 @@ background: linear-gradient(175.5deg, white 0% ,white 31% ,#f2f2f2 20% ,#f2f2f2 
     margin-bottom: 120px;
 }
 
+@media (max-width: 1199px) {
+
+    .about-app__wrapper {
+        width: 100%;
+        background: linear-gradient(175.5deg, white 4% ,white 27% ,#f2f2f2 9% ,#f2f2f2 150%);
+        }
+    
+    .about-app {
+        width: 620px;
+        padding: 0 20px;
+        padding-top: 55px;
+        margin: 0 auto;
+        text-align: start;
+    }
+
+    .about-app__tagline {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .about-app__functions {
+        position: relative;
+        flex-direction: column;
+        padding-left: 310px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about-app__functions::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 270px;
+        height: 485px;
+        background-image: url(/dist/img/Iphone-screen-with-pink-trash-smile.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .about-app__function {
+        width: 310px;
+    }
+
+    .about-app__function-image,
+    .about-app__function-image-shadow {
+        display: none;
+    }
+
+    .about-app__function-tagline {
+        font-family: "Open Sans Bold", Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 10px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    
+    .about-app__function-description {
+        font-family: "Open Sans Regular", Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: #283645;
+        margin-bottom: 45px;
+    }
+
+    .about-app__positive-effect {
+        padding-left: 310px;
+    }
+
+    .about-app__positive-effect::before {
+        bottom: 0px;
+        background-size: 80% auto;
+    }
+
+    .about-app__positive-effect-tagline {
+        margin-bottom: 15px;
+        line-height: 36px;
+    }
+
+    .about-app__positive-effect-proofs {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-app__positive-effect-link {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+
+}
+
+@media (max-width: 659px) {
+
+    .about-app__wrapper {
+        width: 100%;
+        background: linear-gradient(175.5deg, white 4% ,white 26% ,#f2f2f2 9% ,#f2f2f2 150%);
+        }
+
+        .about-app {
+            width: 280px;
+            padding: 0 0px;
+            padding-top: 45px;
+            margin: 0 auto;
+            text-align: start;
+        }
+
+        .about-app__tagline {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-app__tagline-transfer {
+            display: block;
+        }
+    
+        .about-app__functions {
+            display: block;
+            text-align: center;
+            padding-left: 0;
+        }
+
+        .about-app__functions::before {
+            display: none;
+        }
+    
+        .about-app__function-image,
+        .about-app__function-image-shadow {
+            display: none;
+        }
+    
+        .about-app__function-tagline {
+            font-family: "Open Sans Bold", Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 10px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .about-app__function-description {
+            font-family: "Open Sans Regular", Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: #283645;
+            margin-bottom: 45px;
+        }
+
+        .about-app__function-description-mobile {
+            padding-bottom: 302px;
+        }
+
+        .about-app__function-description-mobile::after {
+            content: "";
+            position: absolute;
+            top: 120px;
+            left: 60px;
+            width: 160px;
+            height: 280px;
+            background-image: url(/dist/img/Iphone-screen-with-pink-trash-smile.png);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+
+        }
+        
+        .about-app__positive-effect {
+            display: none;
+        }
+
+}

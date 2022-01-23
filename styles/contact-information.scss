@@ -1,5 +1,5 @@
 .contact-information {
-    width:1200px;
+    width: 1200px;
     padding: 0 120px;
     padding-top: 70px;
     margin: 0 auto;
@@ -27,9 +27,9 @@
     width: 250px;
 }
 
-.contact-information__options_call,
-.contact-information__options_drive,
-.contact-information__options_write {
+.contact-information__options-call,
+.contact-information__options-drive,
+.contact-information__options-write {
     font-family: "Open Sans Bold";
     font-size: 18px;
     line-height: 30px;
@@ -40,7 +40,7 @@
 .contact-information__mobile,
 .contact-information__adress,
 .contact-information__email {
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans Regular", Helvetica, sans-serif;
     font-size: 24px;
     line-height: 30px;
     color: #d22856;
@@ -54,4 +54,65 @@
         opacity: 0.3;
     }
 }
+
+@media (max-width: 1199px) {
+
+    .contact-information {
+        width:620px;
+        padding: 0 20px;
+        padding-top: 50px;
+    }
+
+    .contact-information__headline {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 50px;
+        font-family: "Open Sans Light", Helvetica, sans-serif;
+        font-size: 40px;
+        line-height: 50px;
+        color: #283645;
+        text-transform: uppercase;
+    }
+
+    .contact-information__options {
+        flex-wrap: wrap;
+    }
+
+    .contact-information__options:nth-child(3) {
+        order: 3;
+    }
+
+    .contact-information__options-call,
+    .contact-information__options-drive,
+    .contact-information__options-write {
+    font-family: "Open Sans Bold", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    margin-bottom: 10px;
+ }
+}
+
+@media (max-width: 659px) {
+    
+    .contact-information {
+        width: 280px;
+        padding: 0 20px;
+        padding-top: 50px;
+    }
+
+    .contact-information__headline {
+        padding: 0;
+        font-family: "Open Sans Light", Helvetica, sans-serif;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-information__options-call,
+    .contact-information__options-drive,
+    .contact-information__options-write {
+        margin-bottom: 5px;
+    }
+}
+
 

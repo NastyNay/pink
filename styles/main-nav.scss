@@ -1,0 +1,113 @@
+.main-nav {
+    display: flex;
+    column-gap: 80px;
+    margin-left: auto;
+
+        &__link {
+        font-family: "Open Sans Regular", Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        color: #ffffff;
+        &:hover {
+            color: #d22856;
+        }
+        &:active {
+            color: #ffffff;
+            opacity: 0.3;
+        }    
+    }
+}
+
+.main-nav__burger {
+    display: none;
+}
+
+
+@media (max-width: 1199px) {
+
+    .main-nav__burger {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 30px; 
+        align-self: center;
+        z-index: 3;
+    }
+
+    .main-nav__burger::before,
+    .main-nav__burger::after {
+        content: "";
+        background-color: #ffffff;
+        position: absolute;
+        width: 50px;
+        height: 4px;     
+    }
+
+    .main-nav__burger::before {
+        top: 1;
+    }
+
+    .main-nav__burger::before {
+        bottom: 0;
+    }
+
+    .main-nav__burger.active::before {
+        transform: rotate(45deg);
+        top: 14px;  
+        transition: all 0.3s ease 0.2s;
+    }
+
+    .main-nav__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 13px;
+        transition: all 0.3s ease 0.1s;
+    }
+    
+    .main-nav__burger span {
+        position: absolute;
+        background-color: #ffffff;
+        left: 0;
+        width: 50px;
+        height: 4px;
+        top: 13px;
+    }
+
+    .main-nav__burger.active span {
+        transform: scale(0);
+    }
+
+    .main-nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #283645;
+        padding-top: 80px;
+        display: block;
+        z-index: 2; 
+        transition: all 0.3s ease 0.1s;
+    }
+
+    .main-nav.active {
+        top: 0;
+    }
+
+    .main-nav a {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: 0 5px 2px -4px #000000;
+          
+            &:nth-child(1) {
+                box-shadow: 0px 5px 1px -5px #000000, 0px 0px 0px 1px #000000;
+            }
+    }
+
+
+
+}
+

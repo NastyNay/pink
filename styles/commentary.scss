@@ -1,4 +1,4 @@
-.commentary-section {
+ .commentary-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,37 +20,37 @@
     width: 960px;
 }   
 
-.commentary-section__commentary-arrows {
-   opacity: 0.3;
-   &:hover {
-       opacity: 0.6;
-   }
-   &:active {
-       opacity: 0.1;
-   }
-}
-
 .commentary-section__commentary::before {
     content: "";
     position: absolute;
     top: 70px;
     left: 440px;
-    background-image:  url(/images/quotes-image.svg);
+    background-image:  url(/dist/img/quotes-image.svg);
     background-repeat: no-repeat;
     width: 110px;
     height: 85px;
 }
 
+.commentary-section__commentary-arrows {
+    opacity: 0.3;
+    &:hover {
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 0.1;
+    }
+ }
+
 .commentary-section__commentary-text {
     width: 700px;
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans Regular", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
 }
 
 .commentary-section__user {
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans Bold", Helvetica, sans-serif;
     font-size: 24px;
     line-height: 30px;
     color: #000000;
@@ -58,9 +58,144 @@
 }
 
 .commentary-section__about-user {
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans Regular", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
+}
+
+.commentary-section__tablet-mobile-bullets {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+
+    .commentary-section {
+        width: 620px;
+        padding: 0 20px;
+    }
+
+    .commentary-section__commentary {
+        width:620px;
+        padding-top: 60px;
+    }
+
+    .commentary-section__commentary::before,
+    .commentary-section__commentary-arrows {
+        display: none;
+    }
+    
+    .commentary-section__user {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .commentary-section__about-user {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .commentary-section__tablet-mobile-bullets {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+    }
+
+    .commentary-section__tablet-mobile-bullet {
+        appearance: none;
+        margin: 0;
+        color:#bec2c7;
+        width: 5px;
+        height: 5px;
+        border: 4px solid #bec2c7;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            color:#7e868f;
+            border: 4px solid #7e868f;
+        }
+
+        &:active {
+            color:#e9ebec;
+            border: 4px solid #e9ebec;
+        }
+    }
+
+    .commentary-section__tablet-mobile-bullet_active,
+    .commentary-section__tablet-mobile-bullet_active:hover,
+    .commentary-section__tablet-mobile-bullet_active:active {
+        color:white;
+        width: 12px;
+        height: 12px;
+        border: 3px solid #283645;
+    }
+
+}
+
+@media (max-width: 659px) {
+    .commentary-section {
+        width: 280px;
+        padding: 0 20px;
+    }
+
+    .commentary-section__commentary {
+        width:280px;
+        padding-top: 20px;
+    }
+
+    .commentary-section__commentary::before,
+    .commentary-section__commentary-arrows {
+        display: none;
+    }
+
+    .commentary-section__commentary-text {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .commentary-section__user {
+        font-size: 20px;
+        margin-bottom: 10px;
+        order: -1;
+    }
+
+    .commentary-section__about-user {
+        display: none;
+    }
+
+    .commentary-section__tablet-mobile-bullets {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+    }
+
+    .commentary-section__tablet-mobile-bullet {
+        appearance: none;
+        margin: 0;
+        color:#bec2c7;
+        width: 5px;
+        height: 5px;
+        border: 4px solid #bec2c7;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            color:#7e868f;
+            border: 4px solid #7e868f;
+        }
+
+        &:active {
+            color:#e9ebec;
+            border: 4px solid #e9ebec;
+        }
+    }
+
+    .commentary-section__tablet-mobile-bullet_active,
+    .commentary-section__tablet-mobile-bullet_active:hover,
+    .commentary-section__tablet-mobile-bullet_active:active {
+        color:white;
+        width: 12px;
+        height: 12px;
+        border: 3px solid #283645;
+    }
 }
 
