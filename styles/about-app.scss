@@ -4,7 +4,7 @@ background: linear-gradient(175.5deg, white 7% ,white 30% ,#f2f2f2 30% ,#f2f2f2 
 }
 
 .about-app {
-    width:1200px;
+    width: 1200px;
     padding: 0 120px;
     padding-top: 70px;
     margin: 0 auto;
@@ -68,7 +68,7 @@ background: linear-gradient(175.5deg, white 7% ,white 30% ,#f2f2f2 30% ,#f2f2f2 
     left: 0px;
     width: 300px;
     height: 350px;
-    background-image: url(../dist/img/clock-24-hours.png);
+    background-image: url(/dist/img/clock-24-hours.png);
     background-repeat: no-repeat;
 }
 
@@ -134,7 +134,7 @@ background: linear-gradient(175.5deg, white 7% ,white 30% ,#f2f2f2 30% ,#f2f2f2 
         left: 0px;
         width: 270px;
         height: 485px;
-        background-image: url(../dist/img/Iphone-screen-with-pink-trash-smile.png);
+        background-image: url(/dist/img/Iphone-screen-with-pink-trash-smile.png);
         background-repeat: no-repeat;
         background-size: 100% auto;
     }
@@ -260,7 +260,7 @@ background: linear-gradient(175.5deg, white 7% ,white 30% ,#f2f2f2 30% ,#f2f2f2 
             left: 60px;
             width: 160px;
             height: 280px;
-            background-image: url(../dist/img/Iphone-screen-with-pink-trash-smile.png);
+            background-image: url(/dist/img/Iphone-screen-with-pink-trash-smile.png);
             background-repeat: no-repeat;
             background-size: 100% auto;
 
