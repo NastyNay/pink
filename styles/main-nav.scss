@@ -15,7 +15,15 @@
             color: #ffffff;
             opacity: 0.3;
         }    
+
     }
+}
+
+.main-nav__link_active {
+   display: block;
+   padding-bottom: 10px;
+   border-bottom: 2px solid #ffffff;
+   z-index: 40;
 }
 
 .main-nav__burger {

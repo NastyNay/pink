@@ -1,0 +1,49 @@
+.photo-galary__editor {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 55px 60px 55px 80px;
+}
+
+.photo-galary__editor-tool {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dddfe0;
+}
+
+.photo-galary__editor-tool img {
+    filter: invert(24%) sepia(99%) saturate(2775%) hue-rotate(329deg) brightness(85%) contrast(91%);
+}
+
+.photo-galary__editor-tool-scale {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    width: 290px;
+    height: 2px;
+}
+
+.photo-galary__editor-tool-scale::after {
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    left: 20%;
+    width: 14px;
+    height: 14px;
+    background-color: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    box-shadow: 0 1px #cccdcd;
+    cursor: pointer;
+}
+
+.photo-galary__editor-tool-scale:hover::after {
+    background-color: #d22856;
+}
+
+.photo-galary__editor-fill-tool-scale::after {
+    left: 90%;
+}
+
+.photo-galary__editor-contrast-tool-scale::after {
+    left: 65%;
+}

@@ -10,7 +10,7 @@
 
     <body>
         <div class="page-header__wrapper">  
-            <header class="page-header">
+            <header class="page-header page-header_inner">
                 <div class="page-header__menu-wrapper">
                     <a class="page-header__logo">
                         <img class="page-header__logo-image_desktop" src="dist/img/header-logo-desktop.svg" width="150" height="45">
@@ -19,16 +19,109 @@
                     </a>
                     <nav class="main-nav">
                         <a class="main-nav__link" href="index.html">Главная</a>
-                        <a class="main-nav__link" href="page-with-photos.html">Фотографии</a>
+                        <a class="main-nav__link main-nav__link_active" href="page-with-photos.html">Фотографии</a>
                         <a class="main-nav__link" href="#">Конкурс</a>
                         <a class="main-nav__link" href="#">HTML Academy</a>
                     </nav>
                     <div class="main-nav__burger">
                         <span></span>
                     </div>
-                </div>      
+                </div>
+                <h1 class="page-header__headline">Фотографии<br> пользователей</h1>      
             </header> 
         </div> 
+    <main class="photo-galary">
+        <span class="photo-galary-text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</span>
+        <div class="photo-galary__panorama">
+            <div class="photo-galary__panorama-wrapper">
+                <span class="photo-galary__panorama-of-the-day">Панорама дня</span>
+            </div>
+        </div>
+
+        <div class="photo-galary-wrapper">
+            <div class="photo-galary__panorama-comment">
+               <span class="photo-galary__comment-name">Анна<span class="photo-galary__comment-time"> (5 минут назад)</span></span>
+               <span class="photo-galary__comment-likes">Нравится: 215</span>
+               <p class="photo-galary__comment-body">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            </div>
+
+            <section class="photo-galary__main-section">
+                <div class="photo-galary__main-section-post">
+                    <img src="/dist/img/photo-galary/photo-1-galary-desktop.png">
+                    <div class="photo-galary__main-section-comment">
+                        <span class="photo-galary__comment-name">Левон<span class="photo-galary__comment-time"> (5 часов назад)</span></span>
+                        <p class="photo-galary__comment-body">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <span class="photo-galary__comment-likes">Нравится: 356</span>
+                    </div>
+                </div>
+                <div class="photo-galary__main-section-post">
+                    <img src="/dist/img/photo-galary/photo-2-galary-desktop.png">
+                    <div class="photo-galary__main-section-comment">
+                        <span class="photo-galary__comment-name">Антон<span class="photo-galary__comment-time"> (12 часов назад)</span></span>
+                        <p class="photo-galary__comment-body">Соседи будут рады!</p>
+                        <span class="photo-galary__comment-likes">Нравится: 666</span>
+                    </div>
+                </div>
+                <div class="photo-galary__main-section-post">
+                    <img src="/dist/img/photo-galary/photo-3-galary-desktop.png">
+                        <div class="photo-galary__main-section-comment">
+                        <span class="photo-galary__comment-name">Борис<span class="photo-galary__comment-time"> (20 часов назад)</span></span>
+                        <p class="photo-galary__comment-body">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                        <span class="photo-galary__comment-likes">Нравится: 215</span>
+                    </div>
+                </div>
+                <div class="photo-galary__main-section-post">
+                    <img src="/dist/img/photo-galary/photo-4-galary-desktop.png">
+                    <div class="photo-galary__main-section-comment">
+                        <span class="photo-galary__comment-name">Сергей<span class="photo-galary__comment-time"> (25 часов назад)</span></span>
+                        <p class="photo-galary__comment-body">Самая кубанская в мире!</p>
+                        <span class="photo-galary__comment-likes">Нравится: 4</span>
+                    </div>
+                </div>
+                <div class="photo-galary__main-section-post">
+                    <img src="/dist/img/photo-galary/photo-5-galary-desktop.png">
+                    <div class="photo-galary__main-section-comment">
+                        <span class="photo-galary__comment-name">Максим<span class="photo-galary__comment-time"> (40 часов назад)</span></span>
+                        <p class="photo-galary__comment-body">Где снег-то?</p>
+                        <span class="photo-galary__comment-likes">Нравится: 150</span>
+                    </div>
+                </div>
+                <div class="photo-galary__main-section-post">
+                    <img src="/dist/img/photo-galary/photo-6-galary-desktop.png">
+                    <div class="photo-galary__main-section-comment">
+                        <span class="photo-galary__comment-name">Надежда<span class="photo-galary__comment-time"> (45 часов назад)</span></span>
+                        <p class="photo-galary__comment-body">Всем GM и взаимные лайки!</p>
+                        <span class="photo-galary__comment-likes">Нравится: 2560</span>
+                    </div>
+                </div>
+            </section>
+            <span class="photo-galary-text photo-galary-text_below">Затмите их всех!<br> 
+                Выкладывайте все, что накопилось в телефоне!</span>
+            <div class="photo-galary__editor">
+                <img class="photo-galary__editor-picture" src="/dist/img/photo-galary/photo-in-photo-editor-desktop.png"></img>
+                <div class="photo-galary__editor-tools">
+
+                    <div class="photo-galary__editor-tool">
+                        <img src="/dist/img/photo-galary/crop-tool.svg">
+                        <span class="photo-galary__editor-tool-scale photo-galary__editor-crop-tool-scale"></span>
+                    </div>
+
+                    <div class="photo-galary__editor-tool">
+                        <img src="/dist/img/photo-galary/fill-tool.svg">
+                        <span class="photo-galary__editor-tool-scale photo-galary__editor-fill-tool-scale"></span>
+                    </div>
+
+                    <div class="photo-galary__editor-tool">
+                        <img src="/dist/img/photo-galary/contrast-tool.svg">
+                        <span class="photo-galary__editor-tool-scale photo-galary__editor-contrast-tool-scale"></span>
+                    </div>
+
+                </div>
+            </div>    
+        </div>
+
+    </main>
+        
 
         <footer class="page-footer">
             <a class="page-footer__footer-logo-link" href="#"><img class="page-footer__footer-logo" src="dist/img/footer-logo.svg" width="150" height="40"></img></a>

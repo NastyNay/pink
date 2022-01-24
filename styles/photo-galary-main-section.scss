@@ -1,0 +1,22 @@
+.photo-galary__main-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 20px;
+}
+
+.photo-galary__main-section-post {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.photo-galary__main-section-comment {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    min-height: 155px;
+    height: auto;
+    padding: 25px;
+}
